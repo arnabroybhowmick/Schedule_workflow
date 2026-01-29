@@ -1,0 +1,10 @@
+name:"Schedule job"
+on:
+  schedule:
+           -cron:"0 0 * * *"
+jobs:
+    run-script:
+               runs-on:Windows11
+    steps:
+          -name:Print message
+          run:echo "Schedule workflow"
